@@ -1,3 +1,5 @@
-<p>
-  pokemons works!
-</p>
+<ul>
+  <li *ngFor="let pokemon of pokemons.results">
+    <a [routerLink]="pokemon.id"><button> {{ pokemon.name }} </button></a>
+  </li>
+</ul>
